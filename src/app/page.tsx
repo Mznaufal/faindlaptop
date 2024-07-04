@@ -1,4 +1,4 @@
-import { useTheme } from '@/contexts/themeContext';
+import { useTheme } from '@/app/themeContext';
 import { MaxWidthWrapper } from "@/components/max-width-wrapper";
 import Image from "next/image";
 import Link from "next/link";
