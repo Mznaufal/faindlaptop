@@ -68,7 +68,6 @@ export function Jenis() {
               data.pekerjaan === "professional" &&
               data.penggunaan === "multimedia" &&
               option.id === "traditional" &&
-              option.id == "others"
             )
               return;
             return (
