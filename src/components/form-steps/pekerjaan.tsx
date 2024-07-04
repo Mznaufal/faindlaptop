@@ -3,6 +3,7 @@
 import { useFormStore } from "@/store/form";
 import { RadioCard } from "@/components/radio-card";
 import { motion } from "framer-motion";
+import { Penggunaan } from "./Penggunaan";
 
 const options = [
   {
@@ -65,6 +66,7 @@ export function Pekerjaan() {
           />
         ))}
       </motion.div>
+      {data.pekerjaan === "others" && <Penggunaan />}
     </div>
   );
 }
