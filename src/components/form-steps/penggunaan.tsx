@@ -27,7 +27,7 @@ const options = [
     id: "office",
     label: "Office",
     imgSrc: "office.svg",
-    occupations: ["pekerja-kantoran", "others"],
+    occupations: ["pekerja-kantoran"],
   },
 ];
 
