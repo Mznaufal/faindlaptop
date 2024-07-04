@@ -65,7 +65,6 @@ export function Pekerjaan() {
           />
         ))}
       </motion.div>
-      {data.pekerjaan === "others" && <Penggunaan />}
     </div>
   );
 }
