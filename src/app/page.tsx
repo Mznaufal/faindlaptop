@@ -1,8 +1,10 @@
+import { useTheme } from '@/contexts/themeContext';
 import { MaxWidthWrapper } from "@/components/max-width-wrapper";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
+  const { theme, toggleTheme } = useTheme();
   return (
     <MaxWidthWrapper className="mb-12 mt-20 flex flex-col items-center justify-center text-center">
       <div className="mb-10 flex flex-col gap-12 items-center">
@@ -62,6 +64,12 @@ export default function Home() {
       </section>
       {/* <Image src="/laptop-3.png" alt="laptop" width={1370} height={743} /> */}
       {/* <Model /> */}
+      <button
+        className='mt-10 px-4 py-2 bg-gray-800 text-white rounded'
+        onClick={toggleTheme}
+      >
+        Toggle Theme
+      </button>
     </MaxWidthWrapper>
   );
 }
